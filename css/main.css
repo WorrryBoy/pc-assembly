@@ -141,8 +141,7 @@ header {
     right: 0px;
 }
 main {
-     background-color: #e1e1e1;
-     background: linear-gradient( #121212, transparent 1px), linear-gradient( 90deg, #121212, transparent 1px) , #e1e1e1;
+    background: linear-gradient( #202020, transparent 1px), linear-gradient( 90deg, #202020, transparent 1px) , #0e0d0d;
      background-size: 15px 15px;
      background-position: center center;
     background-attachment: fixed;
