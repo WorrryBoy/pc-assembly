@@ -228,8 +228,12 @@ header {
     right: 0px;
 }
 main {
-    background: url(./img/main-bg.png);
+    background: url(./img/main-bg.pg);
     background-attachment: fixed;
+    background: linear-gradient( rgb(20, 20, 20), transparent 1px), linear-gradient( 90deg, rgb(31, 31, 31), transparent 1px);
+    background-size: 15px 15px;
+    background-color: #000000;
+    background-position: center center;
 }
 .about {
     padding-top: 200px;
