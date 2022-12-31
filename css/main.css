@@ -7,11 +7,18 @@ body {
     margin: 0;
     font-family: 'Roboto';
 }
+.hidden {
+    overflow-y: hidden;
+}
+.burger {
+   z-index: 2;
+}
+
 header {
-    background: linear-gradient(180deg, #454545,#1e1e1e);
+    background: url(/img/main-screen__bgc.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 .header-line {
     margin: 0 80px;
@@ -22,6 +29,77 @@ header {
     align-items: center;
     justify-content: space-between;
 }
+.nav-item {
+    position: relative;
+}
+.item-burger {
+    position: relative;
+}
+.nav-item::before {
+    content:'';
+    position: absolute;
+    left:0; bottom:-5px;
+    background-color: #fff;
+    width: 100%;
+    height: 2px;
+    transition: 0.4s;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.nav-item:hover::before {
+    transform: scaleX(1);
+
+}
+.item-burger::before {
+    content:'';
+    position: absolute;
+    left:0; bottom:-5px;
+    background-color: #fff;
+    width: 100%;
+    height: 2px;
+    transition: 0.4s;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.item-burger:hover::before {
+    transform: scaleX(1);
+}
+.animate {
+    text-align: center;
+    transition: 2s;
+}
+.burger {
+    display: none;
+}
+.burger-menu {
+    position: absolute;
+    height: 100%;
+    background-color: #121212;
+    width: 100%;
+    z-index: 2;
+    position: fixed;
+    left: -100%;
+    transition: 1.2s;
+    text-align: center;
+}
+.active {
+    left: 0;
+}
+.nav-menu {
+    margin-top: 10%;
+    list-style-type: none;
+
+}
+.item-burger {
+    margin-top: 50px;
+    color:#fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+}
+.nav-menu li {
+    margin-top: 70px;
+}
 .line a {
     color: #fff;
     text-decoration: none;
@@ -30,6 +108,7 @@ header {
 }
 .nav {
     margin-left: 100px;
+
 }
 .nav a {
     margin-right: 56px;
@@ -38,6 +117,10 @@ header {
     background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
     padding: 10px 30px;
     border-radius: 50px;
+}
+.enter-item:hover {
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    transition: 0.5s;
 }
 .container {
     margin: 0px 300px;
@@ -83,6 +166,10 @@ header {
     border-radius: 50px;   
     text-decoration: none;
     color: #fff;
+    transition: 1s;
+}
+.buy a:hover {
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
 }
 .count {
     margin-right: 81px;
@@ -141,9 +228,7 @@ header {
     right: 0px;
 }
 main {
-    background: linear-gradient( #202020, transparent 1px), linear-gradient( 90deg, #202020, transparent 1px) , #0e0d0d;
-     background-size: 15px 15px;
-     background-position: center center;
+    background: url(/img/main-bg.png);
     background-attachment: fixed;
 }
 .about {
@@ -408,17 +493,28 @@ main {
     justify-content: space-around;
     margin-top: 113px;
 }
-.teachers-card {
+.teachers-card{
     color: #fff;
+}
+.teach-card1 a:hover,
+.teach-card2 a:hover,
+.teach-card3 a:hover {
+    background-color: #fff;
+    color: #121212;
+    border: 1px solid #121212;
+    transition: all 0.5s;
 }
 .teach-card1 {
     text-align: center;
+    transition: all 0.5s;
 }
 .teach-card2 {
     text-align: center;
+    transition: 0.5s;
 }
 .teach-card3 {
     text-align: center;
+    transition: 0.5s;
 }
 .name {
     margin-top: 40px;
@@ -494,6 +590,9 @@ main {
 .enter-email input:hover {
     border: 2px solid rgb(27, 135, 207);
 }
+.enter2 {
+    align-items: center;
+}
 ::-webkit-input-placeholder {
     color:rgb(255, 255, 255);
     font-size: 16px;
@@ -506,7 +605,6 @@ main {
     background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
     padding: 15px 35px;
     border-radius: 50px;
-    position: absolute;
     right: 25%;
 }
 .icon-col {
@@ -522,4 +620,302 @@ main {
 .network {
     margin-top: 40px;
     padding-bottom: 40px;
+}
+.msi-card-first {
+    display: flex;
+    justify-content: space-around;
+}
+.msi-card-second {
+    display: flex;
+    justify-content: space-around;
+}
+.msi-card-third {
+    display: flex;
+    justify-content: space-around;
+}
+.msi-card-fourth {
+    display: flex;
+    justify-content: space-around;
+}
+@media (max-width:1700px) {
+    .meter1 {
+        max-width: 300px;
+    }
+    .count p span {
+        position: static;
+        color: #fff;
+        
+    }
+    .container {
+        margin: 0 150px;
+    }
+    .buy a {
+        margin-right: 10px;
+    }
+}
+@media (max-width:1461px) {
+    .count {
+        margin-right: 10px;
+    }
+    .meter {
+        max-width: 60%;
+    }
+    .meter1 {
+        max-width: 200px;
+    }
+    .second {
+        right: 40%;
+    }
+    .buy a {
+        margin-right: 5px;
+    }
+    .connect {
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+    .about-subtitle {
+        max-width: 1000px;
+    }
+}
+@media (max-width:1300px) {
+    .course-info {
+        display: block;
+        text-align: justify;
+    }
+    .earn {
+        width: 100%;
+    }
+    .count p {
+        margin-top: 30px;
+    }
+    .earn {
+        margin: 20px auto 0px auto
+
+    }
+    .meters {
+        display: none;
+    }
+    .numb {
+        display: none;
+    }
+    .count {
+        padding: 0;
+    }
+    .enter2 input {
+        max-width: 250px;
+        height: 10px;
+    }
+    .msi-card-up,
+    .msi-card-down{
+        display: block;
+    }
+    .msi-card-up {
+        border-bottom: 0px;
+    }
+    .card-con {
+        border-right: 0px;
+        padding-right: 0;
+    }
+    .nav,
+    .enter {
+        display: none;
+    }
+    .enter-email a {
+        padding: 8px 15px;
+        top: 1px;
+    }
+    .burger {
+        display: initial;
+    }
+}
+@media (max-width:1000px) {
+    .header-title {
+        font-size: 23px;
+    }
+    .card {
+        font-size: 15px;
+        margin-right: 5px;
+        padding: 15px 25px;
+    }
+}
+@media (max-width:900px) {
+    .enter2 input {
+        max-width: 200px;
+    }
+    .enter2 a {
+        position: static;
+    }
+    .enter2 {
+        display: block;
+    }
+    .teachers-line {
+        position: relative;
+        margin: 0 auto;
+    }
+    .image1 {
+        width: auto;
+    }
+    .card-prof1 img {
+        max-width: 100%;
+    }
+    .card-prof2 img {
+        max-width: 100%;
+    }
+    .card-prof3 img {
+        max-width: 100%;
+    }
+    .container {
+        margin: 0 60px;
+    }
+    
+}
+.turn {
+    display: none;
+    justify-content: center;
+    margin-top: -20px;
+}
+.left {
+    margin-right: 50px;
+    position: absolute;
+    left: 10%;
+}
+.right {
+    position: absolute;
+    right: 10%;
+}
+.left img:hover {
+    transform: scale(2px);
+}
+
+@media (max-width:650px) {
+    .title-prof {
+        font-size: 18px;
+    }
+    .desc-prof {
+        font-size: 14px;
+    }
+    .image1 img {
+        max-width: 300px;
+        height: 300px;
+    }
+    .about-title {
+        font-size: 30px;
+    }
+    .about-subtitle {
+        font-size: 14px;
+    }
+    .teachers-card {
+        transition: 1.5s;
+    }
+    .con p {
+        font-size: 30px;
+    }
+    .con-desc {
+        font-size: 14px;
+    }
+    .con img {
+        width: 50px;
+        height: 50px;
+    }
+    .grafic h1 {
+        font-size: 22px;
+    }
+    .info-desc1, .info-desc2, .info-desc3, .info-desc4 {
+        font-size: 14px;
+    }
+    .advantages-title {
+        font-size: 30px;
+    }
+    .partners-title {
+        font-size: 30px;
+    }
+    .partners-title img {
+        width: 50px;
+        height: 50px;
+    }
+    .img-margin, .img-margin2 {
+        width: 120px;
+        height: 50px;
+    }
+    .teaching img {
+        width: 50px;
+        height: 50px;
+    }
+    .teaching h1 {
+        font-size: 30px;
+    }
+    .teaching p {
+        font-size: 14px;
+    }
+    .week-desc {
+        font-size: 14px;
+    }
+    .teachers-title h1 {
+        font-size: 30px;
+    }
+    .teachers-title img {
+        width: 50px;
+        height: 50px;
+    }
+    .teachers-card {
+        display: block;
+    }
+    .teach-card2,
+    .teach-card3 {
+        margin-top: 40px;
+    }
+    .container {
+        margin: 0 30px;
+    }
+    .partners-title {
+        text-align: center;
+    }
+    .graf4 {
+        margin-bottom: 20px;
+    }
+    .card-prof1 img, .card-prof2 img, .card-prof3 img {
+        width: 60px;
+        height: 60px;
+    }
+    .card {
+        font-size: 12px;
+        padding: 8px;
+    }
+    .card-prof {
+        display: block;
+    }
+    .card-prof2, .card-prof3 {
+        margin-top: 60px;
+    }
+    .title-prof {
+        margin-top: 20px;
+    }
+    .card-prof1, .card-prof2, .card-prof3 {
+        border-bottom: 2px solid rgb(245, 244, 244);
+        padding-bottom: 70px;
+    }
+    .list-article h1 {
+        font-size: 30px;
+    }
+    .header-line {
+        margin: 0 40px;
+    }
+    
+}
+@media (max-width:500px) {
+    .header-title h1 {
+        font-size: 30px;
+    }
+}
+@media (max-width:360px) {
+    .header-title h1 {
+        font-size: 20px;
+    }
+    .container {
+        margin: 0 5px;
+    }
+    .graf4 {
+        max-width: 70px;
+    }
 }
