@@ -15,11 +15,11 @@ body {
 }
 
 header {
-    background: url(./img/main-screen__bgc.jpg);
+    background: url(../img/main-screen__bgc.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-color: #1e1e1e;
+    backgroud-color: #1e1e1e;
 }
 .header-line {
     margin: 0 80px;
@@ -229,7 +229,7 @@ header {
     right: 0px;
 }
 main {
-    background: url(./img/main-bg.pg);
+    background: url(../img/main-bg.pg);
     background-attachment: fixed;
     background: linear-gradient( rgb(20, 20, 20), transparent 1px), linear-gradient( 90deg, rgb(31, 31, 31), transparent 1px);
     background-size: 15px 15px;
