@@ -1,22 +1,37 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="/css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body>
+<body class="body">
     <header>
-        <div class="header-line">
-            <div class="line"> 
+        <div class="burger-menu">
+            <div class="nav-menu">
+                    <li class="item"> <a href="#" class="item-burger">Главная</a></li>
+                    <li class="item"> <a href="#" class="item-burger">Курсы</a></li>
+                    <li class="item"> <a href="#" class="item-burger">Расписание</a></li>
+                    <li class="item"> <a href="#" class="item-burger">Преподователи</a></li>
+                    <li class="item"> <a href="#" class="item-burger">Рассылка</a></li>
+                    <li class="item"> <a href="#" class="item-burger">Контакты</a></li>
+                    <li class="item"> <a href="#" class="item-burger">Зайти в кабинет</a></li>
+            </div>
+        </div>
+        <div class="header-line" data-aos="fade-left"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="900"
+        data-aos-duration="2000">
+            <div class="line">
                 <div class="logo">
-                    <img src="img/Vector.png" alt="">
+                    <img src="/img/Vector.png" alt="">
                 </div>
 
-                <div class="nav">
+                <div class="nav" >
                     <a href="#" class="nav-item">Главная</a>
                     <a href="#" class="nav-item">Курсы</a>
                     <a href="#" class="nav-item">Расписание</a>
@@ -28,24 +43,30 @@
                 <div class="enter">
                     <a href="#" class="enter-item">Зайти в кабинет</a>
                 </div>
+                <div class="burger">
+                    <a href="#"><img style="width: 32px; height: 32px;" src="./img/burger.png" alt=""></a>
+                </div>
             </div>
         </div>
 
         <div class="container">
-            <div class="header-title">
+            <div class="header-title" data-aos="fade-right"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="2000">
                 <h1> Первый курс <br> по компьютерной сборке </h1> 
             </div>
             <div class="card-time">
-                <div class="card">
+                <div class="card" data-aos="flip-right" data-aos-duration="3000">
                     <h2> 18 <br><span>Дней </span> </h2>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="flip-right" data-aos-duration="2000">
                     <h2> 18 <br><span>Часов </span> </h2>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="flip-right" data-aos-duration="1500">
                     <h2> 18 <br><span>Минут </span> </h2>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="flip-right" data-aos-duration="1000">
                     <h2> 18 <br><span>Секунд</span> </h2>
                 </div>
             </div>
@@ -53,7 +74,10 @@
 
         <div class="buy-course">
             <div class="container">
-                <div class="course-info"> 
+                <div class="course-info" data-aos="fade-left"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="900"
+                data-aos-duration="2000"> 
 
                     <div class="buy">
                         <a href="#"> Заказать курс</a>
@@ -90,11 +114,12 @@
     </header>
 
     <main>
-        <div class="about">
+        <div class="about" data-aos="fade-up"
+        data-aos-duration="3000">
             <div class="container"> 
                 <div class="connect"> 
                     <div class="image1">
-                        <img src="img/rectangle.png" alt="">
+                        <img src="/img/rectangle.png" alt="">
                     </div>
 
                     <div class="about-text">
@@ -108,10 +133,11 @@
                 </div>
             </div>
         </div>
-        <div class="fast-start">
+        <div class="fast-start" data-aos="fade-up"
+        data-aos-duration="3000">
             <div class="container"> 
                 <div class="con">
-                    <img src="img/ellipse.png" alt="">
+                    <img src="/img/ellipse.png" alt="">
                     <p> Быстрый старт</p>
                 </div>
                 <div class="con-desc">
@@ -160,18 +186,20 @@
                 </div>
             </div>
         </div>
-        <div class="advantages">
+        <div class="advantages" data-aos="fade-up"
+        data-aos-duration="3000">
             <div class="container">
                 <div class="advantages-title">
                     <p>Получите профессию прямо сейчас</p>
                 </div>
             </div>
         </div>
-        <div class="profession">
+        <div class="profession" data-aos="fade-up"
+        data-aos-duration="3000">
             <div class="container"> 
                 <div class="card-prof">
                     <div class="card-prof1">
-                        <img src="img/icon-1.png" alt="">
+                        <img src="/img/icon-1.png" alt="">
                         <div class="title-prof">
                             Только практические навыки в работе
                         </div>
@@ -181,7 +209,7 @@
                     </div>
 
                     <div class="card-prof2">
-                        <img src="img/icon-2.png" alt="">
+                        <img src="/img/icon-2.png" alt="">
                         <div class="title-prof">
                             Работа на самом современном оборудовании
                         </div>
@@ -191,7 +219,7 @@
                     </div>
                         
                     <div class="card-prof3">
-                        <img src="img/icon-3.png" alt="">
+                        <img src="/img/icon-3.png" alt="">
                         <div class="title-prof">
                             Сертификация по окончании обучения
                         </div>
@@ -202,52 +230,62 @@
                 </div>
             </div>    
         </div>
-        <div class="partners">
+        <div class="partners" data-aos="fade-up"
+        data-aos-duration="3000">
             <div class="container">
                 <div class="partners-title">
-                    <img src="img/ellipse.png" alt="">
+                    <img src="/img/ellipse.png" alt="">
                     <p> Партнеры - топовые бренды </p>
                 </div>
                 <div class="msi-card-up">
-                    <div class="msi-card1 card-con">
-                        <img class="img-margin" src="img/msi.png" alt="">
+                    <div class="msi-card-first"> 
+                        <div class="msi-card1 card-con">
+                            <img class="img-margin" src="/img/msi.png" alt="">
+                        </div>
+                        <div class="msi-card2 card-con">
+                            <img class="img-margin" src="/img/msi.png" alt="">
+                        </div>
                     </div>
-                    <div class="msi-card2 card-con">
-                        <img class="img-margin" src="img/msi.png" alt="">
-                    </div>
-                    <div class="msi-card3 card-con">
-                        <img class="img-margin" src="img/msi.png" alt="">
-                    </div>
-                    <div class="msi-card4">
-                        <img class="img-margin" src="img/msi.png" alt="">
+                    <div class="msi-card-second"> 
+                        <div class="msi-card3 card-con">
+                            <img class="img-margin" src="/img/msi.png" alt="">
+                        </div>
+                        <div class="msi-card4">
+                            <img class="img-margin" src="/img/msi.png" alt="">
+                        </div>
                     </div>
                 </div>
                 <div class="msi-card-down">
-                    <div class="msi-card5 card-con">
-                        <img class="img-margin2" src="img/msi.png" alt="">
+                    <div class="msi-card-third"> 
+                        <div class="msi-card5 card-con">
+                            <img class="img-margin2" src="/img/msi.png" alt="">
+                        </div>
+                        <div class="msi-card6 card-con">
+                            <img class="img-margin2" src="/img/msi.png" alt="">
+                        </div>
                     </div>
-                    <div class="msi-card6 card-con">
-                        <img class="img-margin2" src="img/msi.png" alt="">
-                    </div>
-                    <div class="msi-card7 card-con">
-                        <img class="img-margin2" src="img/msi.png" alt="">
-                    </div>
-                    <div class="msi-card8">
-                        <img class="img-margin2" src="img/msi.png" alt="">
+                    <div class="msi-card-fourth"> 
+                        <div class="msi-card7 card-con">
+                            <img class="img-margin2" src="/img/msi.png" alt="">
+                        </div>
+                        <div class="msi-card8">
+                            <img class="img-margin2" src="/img/msi.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="programm">
+        <div class="programm" data-aos="fade-up"
+        data-aos-duration="3000">
             <div class="container">
                 <div class="teaching">
-                    <img src="img/ellipse.png" alt="">
+                    <img src="/img/ellipse.png" alt="">
                     <h1>Программа обучения</h1>
                     <p>Больше 90% учеников прошли полный курс и смогли<br> собрать свой первый компьютер</p> 
                 </div>
                 <div class="weeks">
                     <div class="weeks-left">
-                        <div class="week-1">
+                        <div class="week-1" >
                             <div class="week-1-title title-con">
                                 Неделя №1
                             </div>
@@ -298,28 +336,40 @@
         <div class="your-teachers">
             <div class="container">
                 <div class="teachers-title">
-                    <img src="img/ellipse.png" alt="">
+                    <img src="/img/ellipse.png" alt="">
                     <h1>Ваши преподователи</h1>
                 </div>
-            
-                <div class="teachers-card">
-                    <div class="teach-card1">
-                        <img src="img/Ellipse3.png" alt="">
-                        <div class="name"> Дмитрий Иванов</div>
-                        <div class="desc-name"> Специалист по видеокартам</div>
-                        <a href=""> Биография</a>
+                <div class="teachers-line"> 
+                    <div class="teachers-card">
+                        <div class="teach-card1" data-aos="fade-up"
+                        data-aos-duration="1500">
+                            <img src="/img/Ellipse3.png" alt="">
+                            <div class="name"> Дмитрий Иванов</div>
+                            <div class="desc-name"> Специалист по видеокартам</div>
+                            <a href=""> Биография</a>
+                        </div>
+                        <div class="teach-card2" data-aos="fade-up"
+                        data-aos-duration="2000">
+                            <img src="/img/Ellipse2.png" alt="">
+                            <div class="name"> Дмитрий Иванов</div>
+                            <div class="desc-name"> Специалист по видеокартам</div>
+                            <a href="">Биография</a>
+                        </div>
+                        <div class="teach-card3" data-aos="fade-up"
+                        data-aos-duration="3000">
+                            <img src="/img/Ellipse1.png" alt="">
+                            <div class="name"> Дмитрий Иванов</div>
+                            <div class="desc-name"> Специалист по видеокартам</div>
+                            <a href="">Биография</a>
+                        </div>
                     </div>
-                    <div class="teach-card2">
-                        <img src="img/Ellipse2.png" alt="">
-                        <div class="name"> Дмитрий Иванов</div>
-                        <div class="desc-name"> Специалист по видеокартам</div>
-                        <a href="">Биография</a>
+                </div>
+                <div class="turn">
+                    <div class="left">
+                        <button><img src="./img/left.png" alt=""> </button>
                     </div>
-                    <div class="teach-card3">
-                        <img src="img/Ellipse1.png" alt="">
-                        <div class="name"> Дмитрий Иванов</div>
-                        <div class="desc-name"> Специалист по видеокартам</div>
-                        <a href="">Биография</a>
+                    <div class="right">
+                        <button> <img src="./img/right.png" alt=""></button>
                     </div>
                 </div>
             </div>
@@ -330,9 +380,9 @@
                     <h1> Статьи каждую неделю </h1>
                     <div class="desc-article"> Больше 90% учеников прошли полный курс и смогли <br> собрать свой первый компьютер </div>
                     <div class="enter-email">
-                        <div class="enter"> 
+                        <div class="enter2"> 
                             <input type="mail" placeholder="E-mail">
-                                <a href="">Подписаться</a>
+                                <li> <a class="enter-a" href="">Подписаться</a></li>
                         </div>
                     </div>
                 </div>
@@ -342,20 +392,55 @@
             <div class="container">
                 <div class="icon-col">
                     <div class="vk social">
-                        <img src="img/vk.png" alt="">
+                        <img src="/img/vk.png" alt="">
                     </div>
                     <div class="youtube social">
-                        <img src="img/youtube.png" alt="">
+                        <img src="/img/youtube.png" alt="">
                     </div>
                     <div class="facebook social">
-                        <img src="img/facebook.png" alt="">
+                        <img src="/img/facebook.png" alt="">
                     </div>
                     <div class="instagram social">
-                        <img src="img/instagram.png" alt="">
+                        <img src="/img/instagram.png" alt="">
                     </div>
                 </div>
             </div>
     
     </main>
+    <script> 
+    let burger = document.querySelector('.burger')
+    let nav = document.querySelector('.burger-menu')
+    let body = document.querySelector('.body')
+    let item = document.querySelector('.nav-menu')
+    burger.addEventListener('click' , ()=> {
+        nav.classList.toggle('active')
+        body.classList.toggle('hidden')
+    })
+    let offset = 0
+    const card = document.querySelector ('.teachers-card');
+    
+    document.querySelector('.right').addEventListener('click', ()=> {
+        offset += 710;
+        if (offset >=711) {
+            offset = 0;
+        }
+        card.style.left = offset +'px'
+    });
+    document.querySelector('.left').addEventListener('click', ()=> {
+        offset -=690
+        if (offset <=-691) {
+            offset = 0
+        }
+        card.style.left = offset +'px'
+    });
+    let a = document.querySelector('.enter-a')
+    a.addEventListener('click', ()=> {
+        alert('Вы успешно подписались на рассылку статьи')
+    })
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
