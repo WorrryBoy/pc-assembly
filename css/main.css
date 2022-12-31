@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    background: url(/img/main-screen__bgc.jpg);
+    background: url(./img/main-screen__bgc.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -228,7 +228,7 @@ header {
     right: 0px;
 }
 main {
-    background: url(/img/main-bg.png);
+    background: url(./img/main-bg.png);
     background-attachment: fixed;
 }
 .about {
