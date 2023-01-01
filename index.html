@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="/css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
@@ -22,12 +22,11 @@
                     <li class="item"> <a href="#" class="item-burger">Зайти в кабинет</a></li>
             </div>
         </div>
-        <div class="header-line">
+        <div class="header-line" >
             <div class="line">
                 <div class="logo">
                     <img src="./img/Vector.png" alt="">
                 </div>
-
                 <div class="nav" >
                     <a href="#" class="nav-item">Главная</a>
                     <a href="#" class="nav-item">Курсы</a>
@@ -41,7 +40,9 @@
                     <a href="#" class="enter-item">Зайти в кабинет</a>
                 </div>
                 <div class="burger">
-                    <a href="#"><img style="width: 32px; height: 32px;" src="img/burger.png" alt=""></a>
+                    <a href="#" class="menu-btn">
+                        <span class="span1"></span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -71,10 +72,10 @@
 
         <div class="buy-course">
             <div class="container">
-                <div class="course-info" data-aos="fade-left"
+                <div class="course-info" data-aos="fade-right"
                 data-aos-anchor="#example-anchor"
                 data-aos-offset="900"
-                data-aos-duration="2000"> 
+                data-aos-duration="1000"> 
 
                     <div class="buy">
                         <a href="#"> Заказать курс</a>
@@ -134,7 +135,7 @@
         data-aos-duration="3000">
             <div class="container"> 
                 <div class="con">
-                    <img src="../img/ellipse.png" alt="">
+                    <img src="./img/ellipse.png" alt="">
                     <p> Быстрый старт</p>
                 </div>
                 <div class="con-desc">
@@ -196,7 +197,7 @@
             <div class="container"> 
                 <div class="card-prof">
                     <div class="card-prof1">
-                        <img src="img/icon-1.png" alt="">
+                        <img src="./img/icon-1.png" alt="">
                         <div class="title-prof">
                             Только практические навыки в работе
                         </div>
@@ -206,7 +207,7 @@
                     </div>
 
                     <div class="card-prof2">
-                        <img src="img/icon-2.png" alt="">
+                        <img src="./img/icon-2.png" alt="">
                         <div class="title-prof">
                             Работа на самом современном оборудовании
                         </div>
@@ -216,7 +217,7 @@
                     </div>
                         
                     <div class="card-prof3">
-                        <img src="img/icon-3.png" alt="">
+                        <img src="./img/icon-3.png" alt="">
                         <div class="title-prof">
                             Сертификация по окончании обучения
                         </div>
@@ -231,7 +232,7 @@
         data-aos-duration="3000">
             <div class="container">
                 <div class="partners-title">
-                    <img src="img/ellipse.png" alt="">
+                    <img src="./img/ellipse.png" alt="">
                     <p> Партнеры - топовые бренды </p>
                 </div>
                 <div class="msi-card-up">
@@ -276,7 +277,7 @@
         data-aos-duration="3000">
             <div class="container">
                 <div class="teaching">
-                    <img src="../img/ellipse.png" alt="">
+                    <img src="./img/ellipse.png" alt="">
                     <h1>Программа обучения</h1>
                     <p>Больше 90% учеников прошли полный курс и смогли<br> собрать свой первый компьютер</p> 
                 </div>
@@ -409,9 +410,11 @@
     let nav = document.querySelector('.burger-menu')
     let body = document.querySelector('.body')
     let item = document.querySelector('.nav-menu')
+    let btnact = document.querySelector('.menu-btn')
     burger.addEventListener('click' , ()=> {
         nav.classList.toggle('active')
         body.classList.toggle('hidden')
+        btnact.classList.toggle('menu-rotate')
     })
     let offset = 0
     const card = document.querySelector ('.teachers-card');
