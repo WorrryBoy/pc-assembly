@@ -19,7 +19,6 @@ header {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    backgroud-color: #1e1e1e;
 }
 .header-line {
     margin: 0 80px;
@@ -35,6 +34,52 @@ header {
 }
 .item-burger {
     position: relative;
+}
+.burger{
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    position: relative;
+}
+.menu-btn {
+    height: 10px;
+}
+.menu-btn span {
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    top: 20px;
+    left: 10px;
+}
+.span1::before,
+.span1::after {
+    content: '';
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 2px;
+    width: 20px;
+    transition: 0.5s;
+}
+.menu-rotate .span1::before {
+    transform: rotate(35deg);
+    width: 10px;
+    transform-origin: left bottom;
+}
+.menu-rotate span {
+    
+}
+.menu-rotate .span1::after {
+    transform: rotate(-35deg);
+    width: 10px;
+    transform-origin: left top;
+}
+.menu-btn span::before {
+    transform: translateY(-5px);
+}
+.menu-btn span::after {
+    transform: translateY(5px);
 }
 .nav-item::before {
     content:'';
@@ -85,6 +130,7 @@ header {
 }
 .active {
     left: 0;
+    overflow-y: scroll;
 }
 .nav-menu {
     margin-top: 10%;
@@ -229,7 +275,7 @@ header {
     right: 0px;
 }
 main {
-    background: url(../img/main-bg.pg);
+    background: url(../img/main-bg.png);
     background-attachment: fixed;
     background: linear-gradient( rgb(20, 20, 20), transparent 1px), linear-gradient( 90deg, rgb(31, 31, 31), transparent 1px);
     background-size: 15px 15px;
@@ -642,7 +688,7 @@ main {
     display: flex;
     justify-content: space-around;
 }
-@media (max-width:1700px) {
+@media (max-width:1833px) {
     .meter1 {
         max-width: 300px;
     }
